@@ -1,0 +1,11 @@
+---
+declared-services:
+  lid-service:
+    label: language_identification
+    plan: language_identification_free_plan
+applications:
+- services:
+  - lid-service
+  name: lid-ruby-brooke
+  path: .
+  memory: 256M

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Language Identification Ruby Starter Application</title>
+<title>Target Lady</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,10 +20,39 @@
 				<img src="images/app.png">
 			</div>
 			<div class="col-lg-8 col-xs-8">
-				<h2>Language Identification</h2>
+				<h2>Language Identification by Target Lady</h2>
+				<h3>by Brooke, Elisa, & Josh</h3>
 				<p></p>
 			</div>
 		</div>
+		<div class="message">
+			<h2>Learn new languages with Target Lady!</h2>
+			<p>For each phrase, guess the language. Then check your answer by typing the phrase into the box!</p>
+		</div>
+		<div class="phrases">
+				<div class="phrase">
+					Ce est un match!
+				</div>
+				<div class="phrase">
+					Es un partido!
+				</div>
+				<div class="phrase">
+					Det är en match!
+				</div>
+				<div class="phrase">
+					Si tratta di una partita!
+				</div>
+				<div class="phrase">
+					Het is een wedstrijd!
+				</div>
+				<div class="phrase">
+					Es ist ein Spiel!
+				</div>
+				<!--<div class="phrase">-->
+					<!--Tá sé ar chluiche!-->
+				<!--</div>-->
+		</div>
+
 		<div class="row">
 			<div class="col-lg-6">
 				<h2>Try it!</h2>
@@ -33,7 +62,7 @@
 							<div class="form-group row">
 								<div class="col-lg-12">
 									<textarea id="textArea" name="text" rows="12"
-										placeholder="Please enter 5 or more unique words..."
+										placeholder="What would Target Lady say?"
 										required class="form-control"><%= @text%></textarea>
 								</div>
 							</div>
@@ -49,7 +78,7 @@
 				</div>
 			</div>
 			<div class="col-lg-6">
-				<h2>Output</h2>
+				<h2>It's a match!</h2>
 				<% if defined? @lang %>
 					<div class="well">
 						<div class="form-group row">
